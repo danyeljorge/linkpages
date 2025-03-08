@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana, sans-serif;
+}
+
+body {
+   background-image: url(../img/fundo.jpg);
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+   background-color:black;
+   width: 100vw;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   overflow-x: hidden ;
+   
+}
+
+
+main {
+    width: 500px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+}
+
+.pulsar {
+display: flex;
+align-content: center;
+align-items: center;
+gap: 15px;
+}
+
+
+.pulsando {
+    background-color: lime;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: pulso 1.5s infinite;
+}
+
+@keyframes pulso {
+    0% {
+    transform: scale(1);
+    opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.3);
+        opacity: 0.7;
+    }
+
+    100% {
+    transform: scale(1);
+    opacity: 1;
+    }
+    
+}
+
+.pulsar p { 
+    color: white;
+}
+
+.logo{
+    
+    padding-top: 30px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logo img {
+    width: 180px;
+}
+
+.headline {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: start;
+}
+
+.headline h1 {
+    width: 70%;
+    color: white;
+}
+
+.descricao {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    opacity: 0.8;
+    background-color: #1b1b1b;
+    justify-content: center;
+
+    
+    
+}
+
+.descricao p {
+    color: bisque;
+    
+}
+
+.contatos, .vejaMais  {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divlink {
+    width: 50%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid white;
+    gap: 10px;
+}
+
+.divlink a {
+    text-decoration: none;
+    color: white;
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    align-content: center;
+    text-align: center; 
+    transition: 0.5s ;
+      
+}
+
+.divlink a:hover {
+    text-decoration: none;
+    color: bisque;
+    background-color: #101010;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    align-content: center;
+    text-align: center; 
+    transform: scale(1.05);
+      
+}
+
+.rodape {
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.rodape p {
+    color: white;
+    text-align: center;
+    align-content: center;
+}
